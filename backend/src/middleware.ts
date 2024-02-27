@@ -28,6 +28,8 @@ export function verifyToken(req: Request, res: Response, next: NextFunction): vo
     }
   }
 
+
+
 export function validateBookingDates(req: Request, res: Response, next: NextFunction): void {
     const { checkIn, checkOut } = req.body;
   

@@ -1,9 +1,9 @@
 {
     "compilerOptions": {
-      "target": "es2018",
+      "target": "es6",
       "module": "CommonJS",
-    "outDir": "./dist",
-    "rootDir": "./src",
+      "outDir": "./dist",
+      "rootDir": "./src",
       "lib": ["dom", "dom.iterable", "esnext"],
       "allowJs": true,
       "skipLibCheck": true,
@@ -17,6 +17,6 @@
       "noEmit": true,
       "jsx": "react"
     },
-    "include": ["src/**/*", "src/img.d.ts"]
+    "include": ["src/**/*", "src/img.d.ts", "types.d.ts", "custom.d.ts"]
   }
   

@@ -7,9 +7,15 @@ import { encryptPassword } from "./encryption";
 import { validateBookingDates, verifyToken } from "./middleware";
 const jwt = require('jsonwebtoken');
 
+declare namespace Express {
+    export interface Request {
+      userId?: number;
+      body?: string;
+    }
+  }
   
 require('dotenv').config();
-const path = require('path');
+// const path = require('path');
 const prisma = new PrismaClient();
 const app = express();
 const jwtSecret = process.env.JWT_SECRET;
@@ -22,6 +28,7 @@ app.use(express.json());
 
 app.use(cors());
 const PORT = 4000;
+
 
 const userSchema = z.object({
     username: z.string(),
@@ -113,6 +120,7 @@ app.get('/bookingConfirmation', verifyToken, async (req: Request, res: Response)
 });
 
 app.get('/adminCenter', verifyToken, async (req: Request, res: Response) => {
+
     const userId = req.userId;
 
     if (typeof userId === 'undefined') {
@@ -362,9 +370,9 @@ app.delete('/updateRoom/:roomId', verifyToken, async (req: Request, res: Respons
     }
 });
 
-app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../../public', 'index.html'));
-  });
+// app.get('*', (req, res) => {
+//     res.sendFile(path.resolve(__dirname, '../../public', 'index.html'));
+//   });
   
 
 app.listen(PORT, () => {
