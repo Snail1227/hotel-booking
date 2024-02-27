@@ -32,12 +32,14 @@ const Login: React.FC<LoginProps> = ({ setIsLoggedIn, updateIsAdmin }) => {
         password: password,
       })
         .then((data: any) => {
+          
           setIsLoading(false);
           setIsLoggedIn(true);
           localStorage.setItem('logged',  JSON.stringify(data.token));
           toast.success("User logged in successfully");
           updateIsAdmin(data.role);
           navigate('/booking');
+          window.location.reload();
           handleReset();
         })
         .catch((error) => {
