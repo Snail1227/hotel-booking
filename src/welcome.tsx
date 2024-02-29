@@ -11,14 +11,20 @@ import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 export function Welcome() {
     const images: string[] = [roomImg1, roomImg2, roomImg3, roomImg4, roomImg5];
     const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
+    const [leftArrowClicked, setLeftArrowClicked] = useState(false);
+    const [rightArrowClicked, setRightArrowClicked] = useState(false);
 
     const nextImage = (): void => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+        setRightArrowClicked(true);
+        setTimeout(() => setRightArrowClicked(false), 150);
     };
 
     
     const prevImage = (): React.CSSProperties => {
         setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+        setLeftArrowClicked(true);
+        setTimeout(() => setLeftArrowClicked(false), 150);
         return{
             padding: "2px 10px",
             transition: 'padding 0.5s, opacity 0.5s',
@@ -85,8 +91,8 @@ export function Welcome() {
                                 </div>
                             </div>
                             <div className='room-btn'>
-                                <FontAwesomeIcon className="arrow-btn left-arrow" onClick={prevImage} icon={faArrowLeft} />
-                                <FontAwesomeIcon className="arrow-btn right-arrow" onClick={nextImage} icon={faArrowRight} />
+                                <FontAwesomeIcon className={`arrow-btn left-arrow ${leftArrowClicked ? 'left-shadow-effect' : ''}`} onClick={prevImage} icon={faArrowLeft} />
+                                <FontAwesomeIcon className={`arrow-btn right-arrow ${rightArrowClicked ? 'right-shadow-effect' : ''}`} onClick={nextImage} icon={faArrowRight} />
                             </div>
                         </div>
                         <div className='welcome-text'>

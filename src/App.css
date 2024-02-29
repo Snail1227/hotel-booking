@@ -17,6 +17,15 @@ body {
   text-align: center;
 }
 
+.grid h2 {
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+.grid hgroup {
+  margin-bottom: 40px;
+}
+
 .body-container {
   display: flex;
   flex-direction: column;
@@ -70,6 +79,8 @@ body {
   padding: 0 20px;
 }
 
+.container-fluid 
+
 .grid {
   display: flex;
   flex-direction: row;
@@ -79,6 +90,7 @@ body {
 
 .welcome-header {
   text-align: center;
+  margin-bottom: 85px;
 }
 
 .room {
@@ -103,6 +115,9 @@ body {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
+  background: #0003;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px #000;
 }
 
 .welcome-text p {
@@ -143,11 +158,15 @@ body {
   margin: 10px;
 }
 
-.arrow-btn:hover {
-  
-  color: #007bff 0.5s ease-in-out;
+.left-arrow:hover,
+.right-arrow:hover { 
+  color: #007bff;
 }
 
+.right-shadow-effect,
+.left-shadow-effect {
+  filter: drop-shadow(0px 2px 2px #002144);
+}
 
 
 .testimonial-container {
@@ -226,7 +245,8 @@ nav ul li a {
 }
 nav ul li a:hover {
   background-color: #f0f0f0;
-  border-radius: 4px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px black;
 }
 
 
