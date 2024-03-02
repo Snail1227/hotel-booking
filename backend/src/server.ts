@@ -16,10 +16,10 @@ declare namespace Express {
   }
   
 require('dotenv').config();
-// const path = require('path');
+
 const prisma = new PrismaClient();
 const app = express();
-export const jwtSecret = env.JWT_SECRET;
+export const jwtSecret = process.env.JWT_SECRET;
 
 app.use(express.static('../../public'));
 
