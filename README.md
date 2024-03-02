@@ -15,4 +15,6 @@ This hotel booking system is a comprehensive platform designed to streamline the
     password: SuperSecurePassword
 
 # project run command(it's run both frontend and backend):
+    "npm i"
+    in backend folder: "npx prisma migrate dev"
     "npm run start"
