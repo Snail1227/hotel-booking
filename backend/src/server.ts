@@ -5,6 +5,7 @@ import cors from 'cors';
 import bcrypt from "bcrypt";
 import { encryptPassword } from "./encryption";
 import { validateBookingDates, verifyToken } from "./middleware";
+import { env } from "process";
 const jwt = require('jsonwebtoken');
 
 declare namespace Express {
@@ -18,7 +19,7 @@ require('dotenv').config();
 // const path = require('path');
 const prisma = new PrismaClient();
 const app = express();
-const jwtSecret = process.env.JWT_SECRET;
+export const jwtSecret = env.JWT_SECRET;
 
 app.use(express.static('../../public'));
 

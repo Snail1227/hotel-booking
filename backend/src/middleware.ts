@@ -1,4 +1,5 @@
 import express, { Request, Response, NextFunction } from 'express';
+import { jwtSecret } from './server';
 const jwt = require('jsonwebtoken');
 
 declare module 'express-serve-static-core' {
@@ -19,7 +20,7 @@ export function verifyToken(req: Request, res: Response, next: NextFunction): vo
     const token = authHeader.split(' ')[1].replace(/^"|"$/g, '');
   
     try {
-      const decoded = jwt.verify(token, process.env.JWT_SECRET!);
+      const decoded = jwt.verify(token, jwtSecret);
       req.userId = decoded.userId;
       
       next();
