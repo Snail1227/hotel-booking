@@ -1,5 +1,5 @@
-.env
-# Keep environment variables out of version control
 
+# Keep environment variables out of version control
+backend/.env
 node_modules/
 dist/
