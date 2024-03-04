@@ -11,7 +11,6 @@ body {
   background-position: center;
 }
 
-
 .grid div {
   padding: 10px;
   text-align: center;
@@ -51,8 +50,9 @@ body {
   justify-content: center;
 }
 
-
-.contentContainer {justify-content: center;}
+.contentContainer {
+  justify-content: center;
+}
 
 .contentContainer {
   align-items: center;
@@ -70,7 +70,6 @@ body {
   padding: 0 20px;
 }
 
-
 .container-fluid {
   display: flex;
   justify-content: space-between;
@@ -79,9 +78,7 @@ body {
   padding: 0 20px;
 }
 
-.container-fluid 
-
-.grid {
+.container-fluid .grid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -110,7 +107,6 @@ body {
   }
 }
 
-
 .about-hotel-and-rooms {
   display: flex;
   justify-content: space-around;
@@ -123,8 +119,6 @@ body {
 .welcome-text p {
   line-height: 25px;
 }
-
-
 
 .grid-img {
   display: flex;
@@ -159,7 +153,7 @@ body {
 }
 
 .left-arrow:hover,
-.right-arrow:hover { 
+.right-arrow:hover {
   color: #007bff;
 }
 
@@ -167,7 +161,6 @@ body {
 .left-shadow-effect {
   filter: drop-shadow(0px 2px 2px #002144);
 }
-
 
 .testimonial-container {
   display: flex;
@@ -228,7 +221,6 @@ body {
   color: #cfebff;
 }
 
-
 /* navBar */
 
 nav ul {
@@ -248,7 +240,6 @@ nav ul li a:hover {
   border-radius: 5px;
   box-shadow: 2px 2px 6px black;
 }
-
 
 /* userSideBar */
 
@@ -278,11 +269,11 @@ nav ul li a:hover {
 }
 
 .sidebar.close li a,
-.sidebar.close .container-admin{
+.sidebar.close .container-admin {
   visibility: hidden;
 }
 
-.sidebar li{
+.sidebar li {
   padding: 10px 15px;
   text-decoration: none;
   font-size: 25px;
@@ -320,12 +311,11 @@ nav ul li a:hover {
   height: 100%;
 }
 
-.sidebar-icon p{
+.sidebar-icon p {
   color: white;
 }
 
 /* Footer */
-
 
 footer {
   text-align: center;
@@ -357,7 +347,6 @@ footer {
   justify-content: center;
   align-items: center;
 }
-
 
 .footer,
 .footer small {
@@ -391,7 +380,6 @@ footer {
 .container {
   height: 100%;
 }
-
 
 /* loginAndSignUp */
 
@@ -667,7 +655,6 @@ footer {
   background: -webkit-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
   background: -o-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
   background: linear-gradient(45deg, #cedce7 0%, #596a72 100%);
-
 }
 
 .front:after {
@@ -712,7 +699,7 @@ footer {
   position: absolute;
   left: 0;
   width: 100%;
-  padding: 2rem;
+  padding: 1rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   outline: 1px solid transparent;
@@ -756,7 +743,7 @@ footer {
   position: absolute;
   left: 0;
   width: 100%;
-  padding: 2rem;
+  padding: 1rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   outline: 1px solid transparent;
@@ -768,6 +755,9 @@ footer {
   scrollbar-width: none;
 }
 
+.back .inner p {
+  font-size: 20px;
+}
 
 .front .inner p {
   font-size: 2rem;
@@ -813,8 +803,6 @@ footer {
   }
 }
 
-
-
 .inactive-header {
   display: none !important;
 }
@@ -840,19 +828,18 @@ footer {
   width: 20px;
 }
 
-
-
-.html, body, #root {
+.html,
+body,
+#root {
   height: 100%;
   margin: 0;
 }
 
-
 .center-container {
   display: flex;
   justify-content: space-around;
-  align-items: start; 
-  height: 100%; 
+  align-items: start;
+  height: 100%;
   padding-top: 20px;
 }
 
@@ -861,11 +848,18 @@ footer {
   flex-direction: column;
   align-items: center;
   width: 80%;
-  max-width: 320px; 
-  padding: 10px; 
+  max-width: 320px;
+  padding: 10px;
   margin-bottom: 50px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  background-color: white; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.show-dateRange {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
 }
 
 .calendar-area h2 {
@@ -883,10 +877,6 @@ footer {
   align-self: start;
 }
 
-
-
-
-
 /* prev Btn */
 
 .arrow-button {
@@ -900,7 +890,7 @@ footer {
 }
 
 .arrow-button::before {
-  content: '';
+  content: "";
   border-top: 1.5px solid currentColor;
   border-left: 1.5px solid currentColor;
   height: 10px;
@@ -920,7 +910,6 @@ footer {
   outline: none;
 }
 
-
 /* next Btn */
 
 .right-arrow-button {
@@ -934,7 +923,7 @@ footer {
 }
 
 .right-arrow-button::before {
-  content: '';
+  content: "";
   border-top: 1.5px solid currentColor;
   border-right: 1.5px solid currentColor;
   height: 10px;
@@ -953,7 +942,6 @@ footer {
 .right-arrow-button:focus {
   outline: none;
 }
-
 
 /* calendar hide */
 
@@ -976,19 +964,17 @@ footer {
   display: none;
   position: fixed;
   top: 125px;
-  right: 13,5%;
+  right: 13, 5%;
   width: 340px;
   background-color: #fff;
   z-index: 100;
   transition: right 0.5s ease;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 
 .date-picker-container.open {
   display: block;
 }
-
 
 .calendar {
   display: flex;
@@ -997,16 +983,17 @@ footer {
   padding: 30px;
 }
 
-
-.prev-button, .next-button {
+.prev-button,
+.next-button {
   cursor: pointer;
   border: none;
   background-color: transparent;
   font-size: 24px;
 }
 
-.prev-button::before, .next-button::before {
-  content: '';
+.prev-button::before,
+.next-button::before {
+  content: "";
   display: inline-block;
   border: solid black;
   border-width: 0 3px 3px 0;
@@ -1023,17 +1010,13 @@ footer {
   -webkit-transform: rotate(-45deg);
 }
 
-
-
 /* SelectDropdown.css */
-
-
 
 .select-dropdown-container {
   position: relative;
   display: inline-block;
   width: 100%;
-  max-width: 300px; 
+  max-width: 300px;
 }
 
 .select-dropdown {
@@ -1043,7 +1026,7 @@ footer {
   border-radius: 4px;
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  appearance: none; 
+  appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
   cursor: pointer;
@@ -1051,7 +1034,7 @@ footer {
 
 .select-dropdown:focus {
   outline: none;
-  border-color: #007bff; 
+  border-color: #007bff;
 }
 
 .select-dropdown-icon {
@@ -1059,18 +1042,17 @@ footer {
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
-  pointer-events: none; 
+  pointer-events: none;
 }
 
-
 .select-dropdown-container::after {
-  content: '';
+  content: "";
   position: absolute;
   right: 12px;
   top: 50%;
   transform: translateY(-50%);
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 5px solid #333;
@@ -1098,7 +1080,7 @@ footer {
   font-weight: bold;
 }
 
-.room-info div{
+.room-info div {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1126,15 +1108,14 @@ footer {
 }
 
 .booking-confirmation-thanks,
-.booking-confirmation h2{
+.booking-confirmation h2 {
   display: flex;
   justify-content: center;
 }
 
-
 /* user history bookings */
 
-.booking-history h2{
+.booking-history h2 {
   text-align: center;
 }
 
@@ -1144,7 +1125,7 @@ footer {
   width: 100%;
 }
 
-.booking-history-table-header, 
+.booking-history-table-header,
 .booking-history-table-row {
   display: flex;
   justify-content: space-between;
@@ -1152,15 +1133,20 @@ footer {
   padding: 10px 0;
 }
 
-.booking-history-table-row {padding: 15px 0;}
+.booking-history-table-row {
+  padding: 15px 0;
+}
 
-.booking-history-table-row p {color: #04e96c;}
+.booking-history-table-row p {
+  color: #04e96c;
+}
 
 .booking-history-table-header {
   font-weight: bold;
 }
 
-.header-item, .row-item {
+.header-item,
+.row-item {
   flex: 1;
   text-align: center;
 }
@@ -1181,7 +1167,6 @@ footer {
 
 /* UserProfile */
 
-
 .user-form {
   width: auto;
   margin-top: 60px;
@@ -1197,8 +1182,12 @@ footer {
   width: 100%;
 }
 
-.user-info p:first-child {padding-right: 40px;}
-.user-info p:last-child {padding-left: 40px;}
+.user-info p:first-child {
+  padding-right: 40px;
+}
+.user-info p:last-child {
+  padding-left: 40px;
+}
 
 .userIcon {
   padding: 20px;
@@ -1218,7 +1207,6 @@ footer {
 
 /* choose update or delete */
 
-
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -1231,7 +1219,6 @@ footer {
   align-items: center;
   z-index: 1000;
 }
-
 
 .modal-container {
   background: #fff;
@@ -1248,7 +1235,6 @@ footer {
   cursor: pointer;
   margin: 0;
 }
-
 
 .modal-content {
   display: flex;
@@ -1290,7 +1276,6 @@ footer {
   text-align: center;
 }
 
-
 .modal-header h3 {
   cursor: pointer;
   font-size: 20px;
@@ -1298,7 +1283,6 @@ footer {
 }
 
 /* Update room info */
-
 
 .modal-overlay-updateRoom {
   position: fixed;
@@ -1312,7 +1296,6 @@ footer {
   align-items: center;
   z-index: 1000;
 }
-
 
 .modal-container-updateRoom {
   background: #fff;
