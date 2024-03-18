@@ -25,6 +25,7 @@ This hotel booking system is a comprehensive platform designed to streamline the
 ### Backend:
 
     cd backend 
+    npm i
     npx prisma generate
     npm start
     
