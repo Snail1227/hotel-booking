@@ -44,6 +44,7 @@ const SignUp: React.FC<logInPropsAfterSignUp> = ({ setIsLoggedIn }) => {
           }).then((data) => {
             localStorage.setItem('logged',  JSON.stringify(data.token));
             setIsLoggedIn(true)
+            window.location.reload();
           });
           navigate("/booking");
         })
