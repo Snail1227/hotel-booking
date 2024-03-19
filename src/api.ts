@@ -134,9 +134,10 @@ export const Request = {
         email: email,
         password: password,
       }),
-    }).then(response => {
+    }).then(async response => {
       if (!response.ok) {
-        throw new Error("Failed to create user");
+        const errorResponse = await response.json();
+        throw new Error(errorResponse);
       }
       return response.json();
     })
