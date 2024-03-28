@@ -19,7 +19,7 @@ This hotel booking system is a comprehensive platform designed to streamline the
 ### Frontend:
 
     npm i
-    npm start
+    npm build
 
 
 ### Backend:

@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon --exec ts-node backend/src/server.ts",
-    "start": "webpack serve --mode development --open",
-    "build": "webpack --mode production"
+    "build": "webpack serve --mode development --open"
   },
   "keywords": [],
   "author": "",
