@@ -6,7 +6,7 @@ body {
   font-family: Arial, sans-serif;
   padding: 0 100px;
   background: linear-gradient(to right, #ff7e5f, #feb47b);
-  background-image: url("./roomImg/background.jpg");
+  background-image: url("./roomImg/background.webp");
   background-size: cover;
   background-position: center;
 }

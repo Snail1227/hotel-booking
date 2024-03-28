@@ -3,10 +3,10 @@ import { Request } from "./api";
 import SortByRooms from "./sortByRooms";
 import DatePicker, { DateRange } from "./Calendar";
 import roomImg1 from "./roomImg/room-1.jpg";
-import roomImg2 from "./roomImg/room-2.png";
-import roomImg3 from "./roomImg/room-3.png";
-import roomImg4 from "./roomImg/room-4.png";
-import roomImg5 from "./roomImg/room-5.png";
+import roomImg2 from "./roomImg/room-2.webp";
+import roomImg3 from "./roomImg/room-3.webp";
+import roomImg4 from "./roomImg/room-4.webp";
+import roomImg5 from "./roomImg/room-5.webp";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 
